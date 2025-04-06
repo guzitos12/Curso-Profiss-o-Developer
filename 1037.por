@@ -1,0 +1,27 @@
+/*Você deve fazer um programa que leia um valor real 
+qualquer e apresente uma mensagem dizendo em qual dos
+seguintes intervalos ([0,25], (25,50], (50,75], (75,100]) este valor se encontra.
+Obviamente se o valor não estiver em nenhum destes intervalos, deverá ser impressa
+a mensagem “Fora de intervalo”.
+O símbolo ( representa "maior que". Por exemplo:
+[0,25] indica valores entre 0 e 25.0000, inclusive eles.
+(25,50] indica valores maiores que 25 Ex: 25.00001 até o valor 50.0000000
+*/
+programa {
+	funcao inicio() {
+		real a
+		escreva("escreva um numero real:\n")
+		leia(a)
+		se (a >=0 e a <= 25)
+		escreva("valor indica um valor de 0 a 25.0\n")
+		se (a >=25.1 e a <=50.0)
+		escreva("valor indica um valor de 25.1 a 50.0")
+		se (a >= 50.1 e a <= 75.0)
+		escreva ("valor indica um valor de 50.1 a 75.0")
+		se (a >= 75.1 e a <= 100.0)
+		escreva ("valor indica um valor de 75.1 a 100.0")
+		senao 
+		escreva ("Fora de intervalo")
+		
+	}
+}
